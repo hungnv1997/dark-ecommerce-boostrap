@@ -1,0 +1,88 @@
+/* Header-brand */
+body, html{
+    background-color: #ddd;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    
+}
+/* header */
+.site-header__top-logo{
+    height: 85px;
+}
+.site-header__search-input{
+    position: relative;
+    border-radius: 50px !important;
+  
+    padding-left: 2rem;}
+.search-input__icon{
+   fill: #ddd;
+    position: absolute;
+    width: 25px;
+    padding-left: 0.5rem;
+}
+/* site carousel */
+.site-carousel{
+    position: relative;
+}
+.site-carousel__btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Products type */
+.site__product-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-type__card{
+    margin: 0.5rem;
+    height: 489px;
+    max-width: 397px !important;
+    cursor: pointer;
+}
+.product-card__img{
+    width: 130px;
+    height: 180px;
+}
+/* List-item */
+.list-item__main-item{
+    border: none;
+    border-radius: 0 !important;
+    background-image: url("./img/jacket/11_480x480.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-main__title{
+    font-weight: 600;
+    text-shadow: 2px 2px #999;;
+}
+.list-item__item{
+    min-width: 223px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    
+}
+.list-item__item:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+}
+.footer__title{
+    font-family: 'Unica One', cursive;
+}
+
+/* responsive */
+@media only screen and (max-width: 831px) {
+    .site-header__top-logo{
+        align-items: center!important;
+    }
+    .site-header__search-input, .search-input__icon {
+        display: none!important;
+    }
+  }
